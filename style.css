@@ -1,0 +1,109 @@
+
+/* COLORS
+Bright orange: #e38826
+Dark cyan: #006970
+Very dark cyan: #004241
+*/
+
+/* RESET */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Lexend Dexa', sans-serif;
+  color: hsl(0, 8%, 96%);
+  margin: 0;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+    width: 90%;
+    margin: 4em auto;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 900px) {
+    .cards {
+        flex-direction: row;
+    }
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+
+.card {
+    padding: 2em;
+}
+
+.card__title {
+    text-transform: uppercase;
+    margin: 1.5em 0 1.7em;
+}
+
+.card__paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+/* GENERAL BUTTON STYLES */
+.button {
+    text-decoration: none;
+    background-color: hsl(0, 8%, 96%);
+    display: inline-block;
+    padding: 1em 2em;
+    border-radius: 1.6em;
+    margin-top: 1.5em;
+}
+
+.button:hover {
+    background-color: transparent;
+    border: 1px solid hsl(0, 8%, 96%);
+    color: hsl(0, 8%, 96%);
+}
+
+/* CARD-SPECIFIC BUTTON STYLES */
+.first-card__button {
+    color: #e38826;
+}
+
+.second-card__button {
+    color: #006970;
+}
+
+.third-card__button {
+    color: #004241;
+}
+
+.first-card {
+    background-color: #e38826;
+}
+
+.second-card {
+    background-color: #006970;
+}
+
+.third-card {
+    background-color: #004241;
+}
+
+
+
