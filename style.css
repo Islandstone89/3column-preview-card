@@ -13,6 +13,23 @@ Very dark cyan: #004241
     box-sizing: border-box;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 6rem;
+}
+
 
 body {
   font-family: 'Lexend Dexa', sans-serif;
@@ -23,6 +40,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 .cards {
@@ -33,34 +51,27 @@ body {
     flex-direction: column;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 50rem) {
     .cards {
         flex-direction: row;
     }
 }
 
-.container {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 500px;
+
+.card {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-}
-
-
-
-.card {
     padding: 2em;
 }
 
 .card__title {
     text-transform: uppercase;
-    margin: 1.5em 0 1.7em;
 }
 
 .card__paragraph {
     color: hsla(0, 0%, 100%, 0.75);
+    max-width: 35rem;
 }
 
 
@@ -71,16 +82,17 @@ body {
     display: inline-block;
     padding: 1em 2em;
     border-radius: 1.6em;
-    margin-top: 1.5em;
+    margin-top: auto;
+    margin-right: auto;
 }
 
 .button:hover {
     background-color: transparent;
-    border: 1px solid hsl(0, 8%, 96%);
+    outline: 1px solid hsl(0, 8%, 96%);
     color: hsl(0, 8%, 96%);
 }
 
-/* CARD-SPECIFIC BUTTON STYLES */
+/* CARD-SPECIFIC STYLES */
 .first-card__button {
     color: #e38826;
 }
