@@ -45,10 +45,12 @@ body {
 
 .cards {
     width: 90%;
+    max-width: 62rem;
     margin: 4em auto;
-    border-radius: 30px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 @media (min-width: 50rem) {
